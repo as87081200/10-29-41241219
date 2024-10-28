@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #282c34, #0044cc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+canvas {
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    background-color: #0095DD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #007BB5;
+}
+
+#difficulty {
+    padding: 5px;
+    border-radius: 5px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+}

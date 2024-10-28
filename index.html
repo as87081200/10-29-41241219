@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>磚塊遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>磚塊遊戲</h1>
+    <button id="start-button">開始遊戲</button>
+    <label>難度：<select id="difficulty">
+        <option value="easy">簡單</option>
+        <option value="medium">中等</option>
+        <option value="hard">困難</option>
+    </select></label>
+    <p>剩餘生命: <span id="lives">3</span></p>
+    <p>分數: <span id="score">0</span></p>
+    <p>剩餘時間: <span id="timer">60</span> 秒</p>
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+    <audio id="background-music" src="background.mp3" loop></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="gameover-sound" src="gameover.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
